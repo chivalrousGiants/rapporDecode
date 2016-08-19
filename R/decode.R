@@ -356,6 +356,8 @@ CheckDecodeInputs <- function(counts, map, params) {
 Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
                    correction = c("Bonferroni"), quiet = FALSE, ...) {
 
+  library(Matrix)
+
   ######## Read params file ########
   params <- as.list(read.csv(params_file))
   if (length(params) != 6) {
@@ -381,7 +383,7 @@ Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
   if (any(counts < 0)) {
     stop("Counts file: all counts must be positive.")
   }
-  
+
   ######## Read map file ########
   map_pos <- read.csv(map_file, header = FALSE, as.is = TRUE)
   strs <- map_pos[, 1]
