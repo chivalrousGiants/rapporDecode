@@ -367,8 +367,8 @@ Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
     stop("Parameter names must be k,h,m,p,q,f.")
   }
 
-  print("params:")
-  print(params)
+  cat("params:")
+  cat(params)
 
   ######## Read counts file ########
   counts <- as.matrix(read.csv(counts_file, header = FALSE))
@@ -387,8 +387,8 @@ Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
     stop("Counts file: all counts must be positive.")
   }
 
-  print("counts:")
-  print(counts)
+  cat("counts:")
+  cat(counts)
 
   ######## Read map file ########
   map_pos <- read.csv(map_file, header = FALSE, as.is = TRUE)
@@ -423,8 +423,8 @@ Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
   colnames(mapInt) <- strs
   map <- list(mapInt = mapInt, strs = strs, map_pos = map_pos)
 
-  print("map:")
-  print(map)
+  cat("map:")
+  cat(map)
 
   ########################
   ######## Decode ########
