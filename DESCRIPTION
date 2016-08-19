@@ -1,0 +1,10 @@
+Package: rappor
+Type: Package
+Title: Rappor Analysis
+Version: 1.0.0
+Author: Google
+Maintainer: Google <google@google.com>
+Description: None
+License: Apache 2.0
+LazyData: TRUE
+RoxygenNote: 5.0.1.9000

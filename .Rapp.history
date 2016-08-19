@@ -1,0 +1,12 @@
+x <- cbine(x1 = 3, x2 = c(4:1, 2:5))
+x <- cbind(x1 = 3, x2 = c(4:1, 2:5))
+x
+source("/Users/rhanzawa/Dropbox/HR/Projects/THESIS Supplemental/rappor/analysis/R/ngrams_simulation.R")
+install.packages('shiny')
+source("/Users/rhanzawa/Dropbox/HR/Projects/THESIS Supplemental/rappor/analysis/R/decode.R")
+setwd("/Users/rhanzawa/rappor")
+install("rappor")
+install.packages("devtools")
+install("rappor")
+library("devtools")
+install("rappor")
