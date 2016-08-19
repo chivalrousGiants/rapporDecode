@@ -421,7 +421,7 @@ Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
                       dims = c(params$m * params$k, length(strs)))
 
   colnames(mapInt) <- strs
-  map = list(mapInt = mapInt, strs = strs, map_pos = map_pos)
+  map <- list(mapInt = mapInt, strs = strs, map_pos = map_pos)
 
   print("map:")
   print(map)
