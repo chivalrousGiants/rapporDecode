@@ -368,7 +368,7 @@ Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
   }
 
   cat("params:")
-  cat(params)
+  # cat(params)
 
   ######## Read counts file ########
   counts <- as.matrix(read.csv(counts_file, header = FALSE))
@@ -388,7 +388,7 @@ Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
   }
 
   cat("counts:")
-  cat(counts)
+  # cat(counts)
 
   ######## Read map file ########
   map_pos <- read.csv(map_file, header = FALSE, as.is = TRUE)
@@ -424,7 +424,7 @@ Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
   map <- list(mapInt = mapInt, strs = strs, map_pos = map_pos)
 
   cat("map:")
-  cat(map)
+  # cat(map)
 
   ########################
   ######## Decode ########
