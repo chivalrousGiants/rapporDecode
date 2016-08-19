@@ -16,6 +16,7 @@
 # This library implements the RAPPOR marginal decoding algorithms using LASSO.
 
 library(glmnet)
+library(Matrix)
 
 # So we don't have to change pwd
 source.rappor <- function(rel_path)  {
