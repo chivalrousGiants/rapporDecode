@@ -359,7 +359,7 @@ Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
   library(Matrix)
 
   ######## Read params file ########
-  params <- as.list(read.csv(params_file$datapath))
+  params <- as.list(read.csv(params_file))
   if (length(params) != 6) {
     stop("There should be exactly 6 columns in the parameter file.")
   }
@@ -371,7 +371,7 @@ Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
   # cat(params)
 
   ######## Read counts file ########
-  counts <- as.matrix(read.csv(counts_file$datapath, header = FALSE))
+  counts <- as.matrix(read.csv(counts_file, header = FALSE))
 
   # if (nrow(counts) != params$m) {
   #   stop(sprintf("Got %d rows in the counts file, expected m = %d",
@@ -391,7 +391,7 @@ Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
   # cat(counts)
 
   ######## Read map file ########
-  map_pos <- read.csv(map_file$datapath, header = FALSE, as.is = TRUE)
+  map_pos <- read.csv(map_file, header = FALSE, as.is = TRUE)
   strs <- map_pos[, 1]
   strs[strs == ""] <- "Empty"
 
