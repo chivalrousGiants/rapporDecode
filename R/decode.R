@@ -360,7 +360,7 @@ Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
 
   ######## Read params file ########
   params <- as.list(read.csv(params_file))
-  if (length(params) != 5) {
+  if (length(params) != 6) {
     stop("There should be exactly 6 columns in the parameter file.")
   }
   if (any(names(params) != c("k", "h", "m", "p", "q", "f"))) {
