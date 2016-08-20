@@ -429,10 +429,10 @@ Decode <- function(counts_file, map_file, params_file, alpha = 0.05,
   ########################
   ######## Decode ########
 
-  error_msg <- CheckDecodeInputs(counts, map, params)
-  if (!is.null(error_msg)) {
-    stop(error_msg)
-  }
+  # error_msg <- CheckDecodeInputs(counts, map, params)
+  # if (!is.null(error_msg)) {
+  #   stop(error_msg)
+  # }
 
   k <- params$k
   p <- params$p
